@@ -176,11 +176,17 @@ a {
   width: 20%;
   margin: 0 auto;
   border-left: 1px solid var(--blue);
-  padding-left: 24px;
+  padding-left: var(--m-3);
 }
 
 .skills li {
   margin-bottom: 20px;
+}
+
+.experience ul {
+  border-left: 1px solid var(--blue);
+  padding-left: var(--m-3);
+  margin-left: var(--m-3);
 }
 
 .socialIcon{
@@ -188,10 +194,6 @@ a {
   justify-content: center;
 }
 
-.socialIcon li {
-  margin-right: 24px;
-}
-
-.socialIcon li:nth-last-child(1) {
-  margin-right: 0px;
+.socialIcon li:nth-child(n+1):nth-child(-n+2) {
+  margin-right: var(--m-3);
 }
