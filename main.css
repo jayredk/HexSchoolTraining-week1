@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Ping Fang TC", "Noto Sans TC", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* variable */
+:root {
+  /* color */
+  --red: #A00404;
+  --blue: #96A9C4;
+  --bg: #415165;
+
+  /* spacing */
+  --m-1: 8px;
+  --m-2: 16px;
+  --m-3: 24px;
+  --m-4: 48px;
+  --m-40: 40px;
+  --m-72: 72px;
+}
+/* main */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* spacing */
+.pt-3 {
+  padding-top: var(--m-3);
+}
+.pb-36{
+  padding-bottom: 36px;
+}
+
+.mt-4 {
+  margin-top: var(--m-4);
+}
+.mb-1 {
+  margin-bottom: var(--m-1);
+}
+
+.mb-2 {
+  margin-bottom: var(--m-2);
+}
+
+.mb-3 {
+  margin-bottom: var(--m-3);
+}
+
+.mb-4 {
+  margin-bottom: var(--m-4);
+}
+
+.mb-40 {
+  margin-bottom: var(--m-40);
+}
+
+.mb-72 {
+  margin-bottom: var(--m-72);
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+li {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.decoration {
+  color: var(--red);
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: var(--m-2);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skills, .contact {
+  background: var(--bg);
+}
+
+.skills hr {
+  width: 996px;
+}
+
+.skills ul {
+  width: 20%;
+  margin: 0 auto;
+  border-left: 1px solid var(--blue);
+  padding-left: 24px;
+}
+
+.skills li {
+  margin-bottom: 20px;
+}
+
+.socialIcon{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon li {
+  margin-right: 24px;
+}
+
+.socialIcon li:nth-last-child(1) {
+  margin-right: 0px;
+}
